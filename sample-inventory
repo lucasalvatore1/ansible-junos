@@ -1,0 +1,8 @@
+[junos]
+switch1
+switch2
+switch3
+
+[junos:vars]
+ansible_connection=netconf
+ansible_network_os=junos

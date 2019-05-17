@@ -1,0 +1,10 @@
+---
+- name: Run show commands
+  junos_command:
+    commands:
+      - show bgp summary
+  register: junos_result
+
+- name: Print response
+  debug:
+    var: junos_result.stdout_lines

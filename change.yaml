@@ -1,0 +1,6 @@
+---
+- name: Set config and commit
+  junos_config:
+    lines:
+      - set system time-zone UTC
+      - set system name-server 8.8.4.4
